@@ -4,7 +4,6 @@ LIB_NAME = libmemory
 SOURCE_NAME = library
 MAIN_NAME = main
 TEST_NAME = test
-# .PHONY: <typyt> jak coś się może nie wykryć zmiana pliku
 static:
 	$(CC) $(FLAGS) -c $(SOURCE_NAME).c -o $(LIB_NAME).o
 	ar rcs $(LIB_NAME).a $(LIB_NAME).o
@@ -25,3 +24,5 @@ main_shared:
 	gcc -L./ -Wl,-rpath=./ -Wall -o $(MAIN_NAME)_shared main.c libmemory.so
 	#$(CC) $(FLAGS) -c $(MAIN_NAME).c –$(LIB_NAME) –L ./ -o main
 
+clean:
+	rm -f $(MAIN_NAME)_shared $(MAIN_NAME)_static *.so *.o *.a

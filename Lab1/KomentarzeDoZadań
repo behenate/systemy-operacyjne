@@ -1,0 +1,37 @@
+---------------------- ZADANIE 1 ----------------------------------
+Makefile:
+    Kompilacje
+        -Biblioteki statycznej: make static
+        -Biblioteki współdzielnoej: make shared
+        -Kompilacji pliku korzystającego z biblioteki static: make main_static
+        -Kompilacji pliku korzystającego z biblioteki shared: make main_shared
+
+
+--------------------- ZADANIE 2 ------------------------------------
+Makefile:
+    -Kompilacja pliku wykonywalnego przyjmującego argumenty: make main
+    -Generator raportu wraz z uruchomieniem: make test
+
+Korzystanie z programu z argumentami:
+    ./main {lista komend}
+    Przykładowo
+     ./main create_table 10 wc_files raport2.txt save_to_memory save_remove 13
+
+     Aby uruchomić generowanie raportu należy uruchomić plik bez żadnych argumentów
+
+--------------------- ZADANIE 3 --------------------------------------
+    Makefile:
+        -Generowanie raportu 3a : make test
+        -Generowanie raportu 3b:  make optimization_test
+
+    Komentarz do zadania 3a:
+        Pomimo bardzo dużych plików czas operacji jest niski. Różnice w czasie wykonania
+        poszczególnych rodzajów biblioteki są marginalne co jest prawdopodobnie spowodowane
+        prostotą biblioteki, która składa się tylko z kilku funkcji.
+        Biorąc pod uwagę wyniki można jednak uznać, że biblioteka współdzielona jest najszybsza,
+        natomiast są to różnice na poziomie niepewności pomiarowej.
+
+    Komentarz do zadania 3b:
+        Najlepsze wyniki wydajności uzyskano dla poziomu optymalizacji O3, również dla niej pliki
+        wyjściowe miały największe rozmiary. Dla O1 o Os rozmiar plików wyjściowych był identyczny
+

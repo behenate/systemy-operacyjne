@@ -7,7 +7,6 @@ STATIC_TEST_NAME = test
 TASK_1_PATH = ../Task1
 TASK_2_PATH = .
 TASK_3_PATH = ../Task3
-# .PHONY: <typyt> jak coś się może nie wykryć zmiana pliku
 
 .PHONY: main test
 static:
@@ -19,4 +18,7 @@ main:
 	$(CC) $(FLAGS) $(TASK_2_PATH)/main.c -o $(TASK_2_PATH)/$(MAIN_NAME) -I ./ $(TASK_1_PATH)/$(LIB_NAME).a
 test:
 	make main;
-	./main ;
+	./main;
+
+clean:
+	rm -f $(MAIN_NAME) $(MAIN_NAME)_shared $(MAIN_NAME)_static *.so *.o *.a

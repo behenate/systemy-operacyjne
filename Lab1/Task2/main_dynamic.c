@@ -6,6 +6,8 @@
 #include <unistd.h>
 #include <dlfcn.h>
 FILE *raport;
+// Cała funkcjonalnośc jest taka sama jak w Task2/main.c, jedyna różnica to sposób ładowania bibliotek
+// Funkcje do zaimportowania
 void (*create_table)(int);
 void (*do_wc)(char *strings[], int num_files);
 int (*save_to_memory)();
@@ -162,6 +164,7 @@ void test() {
 
 
 int main(int argc, char *argv[]) {
+//    Załadowanie funkcji dynamicznie
     void *handle;
     handle = dlopen("../Task1/libmemory.so", RTLD_LAZY);
     *(void**)(&create_table) = dlsym(handle, "create_table");

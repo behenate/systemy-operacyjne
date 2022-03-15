@@ -12,6 +12,10 @@ TASK_3_PATH = .
 # .PHONY: <typyt> jak coś się może nie wykryć zmiana pliku
 
 .PHONY: test test_dynamic test_shared test_static optimization_test
+clean:
+	rm -f $(STATIC_TEST_NAME)* $(SHARED_TEST_NAME)* $(DYNAMIC_TEST_NAME)* $(MAIN_NAME) $(MAIN_NAME)_shared $(MAIN_NAME)_static *.so *.o *.a blockTest3 tmpfile
+clean_fuses:
+	rm -f .fuse*
 static:
 	$(CC) $(FLAGS) -c $(TASK_1_PATH)/$(SOURCE_NAME).c -o $(TASK_1_PATH)/$(LIB_NAME).o
 	ar rcs $(TASK_1_PATH)/$(LIB_NAME).a $(TASK_1_PATH)/$(LIB_NAME).o
@@ -33,6 +37,8 @@ test_dynamic:
 	make shared
 	$(CC) ../Task2/main_dynamic.c -o $(DYNAMIC_TEST_NAME) -ldl
 test:
+	make static;
+	make shared;
 	echo "---------------------------------------- TEST STATIC LIBRARY: ----------------------------------------" > $(TASK_3_PATH)/results3a.txt;
 	echo "" >> $(TASK_3_PATH)/results3a.txt;
 	make test_static
@@ -44,7 +50,7 @@ test:
 	make test_dynamic
 	echo "---------------------------------------- TEST DYNAMIC LIBRARY: ----------------------------------------" >> $(TASK_3_PATH)/results3a.txt;
 	./$(DYNAMIC_TEST_NAME) >> results3a.txt
-
+	make clean_fuses
 
 # ------------------------------ TASK 3B ----------------------------------------------------------------------------
 test_static_O1:
@@ -112,4 +118,4 @@ optimization_test:
 	make test_static_Os;
 	make test_shared_0s;
 	make test_dynamic_0s;
-
+	make clean_fuses

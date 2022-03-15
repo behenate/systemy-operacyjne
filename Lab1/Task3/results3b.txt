@@ -1,2 +1,300 @@
 ---------------------------------------- TEST OPTIMIZATION O1: ----------------------------------------
 Static O1: 
+-------TABLE OF SIZE 1000 ALLOCATION TEST ------- 
+Real time:   0.000005 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small, medium, large ------- 
+Real time:   0.000929 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt, medium.txt, large.txt, large.txt,large.txt,large.txt, medium.txt ------- 
+Real time:   0.002908 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt ------- 
+Real time:   0.000809 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK THREE BLOCKS ------- 
+Real time:   0.000209 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK BIG BLOCK ------- 
+Real time:   0.000118 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST REMOVE BLOCKS, NO. BLOCKS: 100 ------- 
+Real time:   0.000016 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE AND REMOVE BLOCKS, NO. BLOCKS: 10 ------- 
+Real time:   0.124533 
+User time:   0.010000 
+System time: 0.010000 
+Shared O1: 
+-------TABLE OF SIZE 1000 ALLOCATION TEST ------- 
+Real time:   0.000004 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small, medium, large ------- 
+Real time:   0.001147 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt, medium.txt, large.txt, large.txt,large.txt,large.txt, medium.txt ------- 
+Real time:   0.002304 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt ------- 
+Real time:   0.000338 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK THREE BLOCKS ------- 
+Real time:   0.000159 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK BIG BLOCK ------- 
+Real time:   0.000095 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST REMOVE BLOCKS, NO. BLOCKS: 100 ------- 
+Real time:   0.000021 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE AND REMOVE BLOCKS, NO. BLOCKS: 10 ------- 
+Real time:   0.127609 
+User time:   0.040000 
+System time: 0.040000 
+Dynamic O1: 
+-------TABLE OF SIZE 1000 ALLOCATION TEST ------- 
+Real time:   0.000008 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small, medium, large ------- 
+Real time:   0.001457 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt, medium.txt, large.txt, large.txt,large.txt,large.txt, medium.txt ------- 
+Real time:   0.002498 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt ------- 
+Real time:   0.000722 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK THREE BLOCKS ------- 
+Real time:   0.000329 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK BIG BLOCK ------- 
+Real time:   0.000107 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST REMOVE BLOCKS, NO. BLOCKS: 100 ------- 
+Real time:   0.000015 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE AND REMOVE BLOCKS, NO. BLOCKS: 10 ------- 
+Real time:   0.119234 
+User time:   0.040000 
+System time: 0.040000 
+---------------------------------------- TEST OPTIMIZATION O3: ----------------------------------------
+Static O3: 
+-------TABLE OF SIZE 1000 ALLOCATION TEST ------- 
+Real time:   0.000007 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small, medium, large ------- 
+Real time:   0.000916 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt, medium.txt, large.txt, large.txt,large.txt,large.txt, medium.txt ------- 
+Real time:   0.002314 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt ------- 
+Real time:   0.000587 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK THREE BLOCKS ------- 
+Real time:   0.000091 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK BIG BLOCK ------- 
+Real time:   0.000087 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST REMOVE BLOCKS, NO. BLOCKS: 100 ------- 
+Real time:   0.000016 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE AND REMOVE BLOCKS, NO. BLOCKS: 10 ------- 
+Real time:   0.118159 
+User time:   0.030000 
+System time: 0.030000 
+Shared O3: 
+-------TABLE OF SIZE 1000 ALLOCATION TEST ------- 
+Real time:   0.000008 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small, medium, large ------- 
+Real time:   0.001206 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt, medium.txt, large.txt, large.txt,large.txt,large.txt, medium.txt ------- 
+Real time:   0.002260 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt ------- 
+Real time:   0.000214 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK THREE BLOCKS ------- 
+Real time:   0.000073 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK BIG BLOCK ------- 
+Real time:   0.000201 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST REMOVE BLOCKS, NO. BLOCKS: 100 ------- 
+Real time:   0.000020 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE AND REMOVE BLOCKS, NO. BLOCKS: 10 ------- 
+Real time:   0.125870 
+User time:   0.020000 
+System time: 0.020000 
+Dynamic O3: 
+-------TABLE OF SIZE 1000 ALLOCATION TEST ------- 
+Real time:   0.000004 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small, medium, large ------- 
+Real time:   0.000750 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt, medium.txt, large.txt, large.txt,large.txt,large.txt, medium.txt ------- 
+Real time:   0.002151 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt ------- 
+Real time:   0.000432 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK THREE BLOCKS ------- 
+Real time:   0.000080 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK BIG BLOCK ------- 
+Real time:   0.000268 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST REMOVE BLOCKS, NO. BLOCKS: 100 ------- 
+Real time:   0.000021 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE AND REMOVE BLOCKS, NO. BLOCKS: 10 ------- 
+Real time:   0.142133 
+User time:   0.050000 
+System time: 0.050000 
+---------------------------------------- TEST OPTIMIZATION Os: ----------------------------------------
+Static Os: 
+-------TABLE OF SIZE 1000 ALLOCATION TEST ------- 
+Real time:   0.000008 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small, medium, large ------- 
+Real time:   0.001163 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt, medium.txt, large.txt, large.txt,large.txt,large.txt, medium.txt ------- 
+Real time:   0.002694 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt ------- 
+Real time:   0.000452 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK THREE BLOCKS ------- 
+Real time:   0.000076 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK BIG BLOCK ------- 
+Real time:   0.000186 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST REMOVE BLOCKS, NO. BLOCKS: 100 ------- 
+Real time:   0.000015 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE AND REMOVE BLOCKS, NO. BLOCKS: 10 ------- 
+Real time:   0.133458 
+User time:   0.020000 
+System time: 0.020000 
+Shared Os: 
+-------TABLE OF SIZE 1000 ALLOCATION TEST ------- 
+Real time:   0.000009 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small, medium, large ------- 
+Real time:   0.001520 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt, medium.txt, large.txt, large.txt,large.txt,large.txt, medium.txt ------- 
+Real time:   0.002550 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt ------- 
+Real time:   0.000774 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK THREE BLOCKS ------- 
+Real time:   0.000192 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK BIG BLOCK ------- 
+Real time:   0.000091 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST REMOVE BLOCKS, NO. BLOCKS: 100 ------- 
+Real time:   0.000016 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE AND REMOVE BLOCKS, NO. BLOCKS: 10 ------- 
+Real time:   0.118849 
+User time:   0.020000 
+System time: 0.020000 
+Dynamic Os: 
+-------TABLE OF SIZE 1000 ALLOCATION TEST ------- 
+Real time:   0.000009 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small, medium, large ------- 
+Real time:   0.001071 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt, medium.txt, large.txt, large.txt,large.txt,large.txt, medium.txt ------- 
+Real time:   0.002368 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST WC ON Files small.txt ------- 
+Real time:   0.000441 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK THREE BLOCKS ------- 
+Real time:   0.000181 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE TO BLOCK BIG BLOCK ------- 
+Real time:   0.000051 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST REMOVE BLOCKS, NO. BLOCKS: 100 ------- 
+Real time:   0.000014 
+User time:   0.000000 
+System time: 0.000000 
+------- TEST SAVE AND REMOVE BLOCKS, NO. BLOCKS: 10 ------- 
+Real time:   0.120620 
+User time:   0.020000 
+System time: 0.020000 
