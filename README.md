@@ -1,6 +1,6 @@
 # Operating Systems
 
-This repository contains solutions for assignments from Operating Systems course on AGH UST.
+This repository contains solutions for assignments from Operating Systems course on AGH UST. The code is entirely written in C.
 
 ## Lab 1
 ### Memory allocation, creating libraries, mesauring execution time
