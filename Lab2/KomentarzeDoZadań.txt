@@ -1,0 +1,34 @@
+
+
+Zestaw zadań został wykonany w całości
+
+# Zadanie1
+Aby skompilować zadanie nakeży użyć komendy
+    make main
+    uruchomienie ./main plik_we plik_wy
+    Do programu należy podać przed uruchomieniem dwa argumenty plik wejściowy i wyjściowy lub podać je po uruchomieniu
+    programu (automatycznie zapyta), program również zapyta czy chcemy uruchomić w trybie systemowym czy biblioteki
+
+    Aby skompilować i uruchomić testy:
+    make test
+    Wnioski z pomiaru:
+    Biblioteka okazała się znacznie szybsza od funkcji systemowych w czytaniu, prawdopodobnie dzięki optymalizacji
+    oraz większej "idiotoodporności"
+
+
+# Zadanie 2
+Aby skompilować zadanie nakeży użyć komendy
+    make main
+    uruchomienie ./main <plik_we> <litera>
+    Do programu należy podać przed uruchomieniem dwa argumenty plik wejściowy i literę lub podać je po uruchomieniu
+    programu (automatycznie zapyta), program również zapyta czy chcemy uruchomić w trybie systemowym czy biblioteki
+
+    Aby skompilować i uruchomić testy:
+    make test
+    Wnioski z pomiaru:
+    Biblioteka okazała się znacznie szybsza od funkcji systemowych w czytaniu, tak samo jak w przypadku zadania 1
+
+# Zadanie 3
+Aby skompilować zadanie nakeży użyć komendy
+    make main
+    uruchomienie ./main <ścieżka>

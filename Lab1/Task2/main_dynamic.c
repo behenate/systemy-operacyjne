@@ -163,7 +163,8 @@ void test() {
 }
 
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]){
+
 //    Załadowanie funkcji dynamicznie
     void *handle;
     handle = dlopen("../Task1/libmemory.so", RTLD_LAZY);

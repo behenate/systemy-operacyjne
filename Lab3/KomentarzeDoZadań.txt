@@ -1,0 +1,48 @@
+--- ZADANIE 1 ---
+Po skompilowaniu za pomocą
+
+make main
+
+Program można uruchomić na dwa sposoby:
+./task1  - program zapyta o liczbę procesów
+./task1 <liczba_procesów> - program utworzy podaną liczbę procesów
+
+--- ZADANIE 2 ---
+Po skompilowaniu za pomocą
+
+make main
+
+Program można uruchomić na dwa sposoby:
+./task2  - program zapyta o rozmiar kwadratu i liczbę procesów
+./task2 <rozmiar_kwadratu> <liczba procesów>
+
+Program zakłada że z wielokrotności podanego rozmiaru kwadratu da się uzyskac liczbę 1!
+
+Aby uruchomić testy:
+
+make test
+
+Z testów wynika że zwiększenie liczby procesów nie wpływa pozytywnie na czas liczenia liczby pi
+
+Aby usunąc pliki w*.txt
+
+make clean
+
+--- ZADANIE 3 ---
+Po skompilowaniu za pomocą
+
+make main
+
+Program można uruchomić na jeden sposób:
+
+./task3 <ścieżka do przeszukania> <tekst do znalezienia> <maksymalna głębokość przeszukiwania>
+
+Po skompilowaniu za pomocą
+
+make main_run
+
+Program uruchomi się na folderze tests i będzie szukał w plikach słowa czesc
+
+
+
+
