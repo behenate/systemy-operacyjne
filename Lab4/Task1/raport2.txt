@@ -1,0 +1,11 @@
+---------------- FORK ---------------------------
+Ignore - rodzic ma ignorowanie sygnału,  dziecko dziedziczy ignorowanie sygnału
+Handle - rodzic ma obsługę sygnału dziecko dziedziczy obsługę sygnału
+Mask - rodzic ma maskę sygnałów, dziecko dziedziczy maskę sygnałów
+Pending -rodzic ma oczekujące sygnały, dziedzko nie dziedziczy oczekujących sygnałów
+
+
+---------------- EXEC ---------------------------
+Ignore - rodzic ma ignorowanie sygnału,  dziecko dziedziczy ignorowanie sygnału
+Mask - rodzic ma maskę sygnałów, dziecko dziedziczy maskę sygnałów
+Pending -rodzic ma oczekujące sygnały, dziedzko dziedziczy oczekujące sygnały

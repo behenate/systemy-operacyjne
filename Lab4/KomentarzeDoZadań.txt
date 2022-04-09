@@ -1,0 +1,38 @@
+Zadanie zostało wykonane w całości
+
+-------------------------- Zadanie 1 --------------------------
+Aby skompilować należy wpisać:
+make main
+
+Aby użyć w wersji fork należy wpisać
+
+./fork <ignore/mask/pending>
+
+Aby użyć w wersji exec należy wpisać
+
+./exec <ignore/mask/pending>
+
+-------------------------- Zadanie 2 --------------------------
+Aby skompilować i automatycznie uruchomić testy dla zadania 2 należy wpisać
+make main
+
+Testy uruchomią się automatycznie i zostaną zapisane do pliku raport2.txt
+
+-------------------------- Zadanie 3a/3b --------------------------
+Oba zadania działają podobnie
+Aby skompilować należy wpisać make main
+
+Istnieją 2 sposoby uruchomienia
+
+wpisanie
+./task3a - uruchomi program pytający o liczbę sygnałów oraz tryb i uruchamiający odpowiednio sendera i catchera
+
+analogicznie zadziała
+./task3b
+
+WAŻNE: PROSZĘ WPISYWAĆ TRYB DUŻYMI LITERAMI: KILL SIGQUEUE SIGRT
+
+./catcher <tryb: KILL/SIGQUEUE/SIGRT>
+./sender <pid catchera> <liczba sygnałów> <tryb: KILL/SIGQUEUE/SIGRT>
+
+Należy pamiętać aby tryby podane do sendera i catchera były takie same!

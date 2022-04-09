@@ -11,3 +11,6 @@ https://github.com/behenate/systemy-operacyjne/tree/master/Lab2
 ## Lab 3
 ### Creating processes, process environment, process handling
 https://github.com/behenate/systemy-operacyjne/tree/master/Lab3
+## Lab 4
+### Signals, signal handling, communication between processes
+https://github.com/behenate/systemy-operacyjne/tree/master/Lab4
