@@ -8,13 +8,15 @@
 #define MAX_COMMAND_LEN 1000
 #define MAX_ARGS_CNT 100
 char **commands;
-size_t *commands_len;
 
 
 void execute_commands(char * split_commands[MAX_COMMANDS_CNT][MAX_ARGS_CNT]) {
     int commands_cnt = 0;
     while (split_commands[commands_cnt][0] != NULL)
         commands_cnt++;
+//    for (int i = 0; i < commands_cnt; ++i) {
+//        printf("%s %s %s \n", split_commands[i][0], split_commands[i][1], split_commands[i][2]);
+//    }
 
 //    Create a buffer for the pipes
     int fds[commands_cnt-1][2];
@@ -23,22 +25,15 @@ void execute_commands(char * split_commands[MAX_COMMANDS_CNT][MAX_ARGS_CNT]) {
     }
 //Run all of the commands
     for (int i = 0; i < commands_cnt; ++i) {
-        pid_t forked = fork();
-        if(forked == 0){
-
-//            Setup the correct outputs
-            if(i > 0){
+        if(fork() == 0){
+            if(i-1 >=0)
                 dup2(fds[i-1][0], STDIN_FILENO);
-            }
-            if (i != commands_cnt-1){
+            if(i != commands_cnt-1)
                 dup2(fds[i][1],STDOUT_FILENO);
-            }
-
             for (int j = 0; j < commands_cnt-1; ++j) {
                     close(fds[j][1]);
                     close(fds[j][0]);
             }
-//              Execute
             execvp(split_commands[i][0], split_commands[i]);
             exit(0);
         }
@@ -46,11 +41,9 @@ void execute_commands(char * split_commands[MAX_COMMANDS_CNT][MAX_ARGS_CNT]) {
     }
     for (int j = 0; j < commands_cnt-1; ++j) {
         close(fds[j][1]);
-    }
-
-    for (int j = 0; j < commands_cnt-1; ++j) {
         wait(0);
     }
+
 }
 
 
@@ -63,7 +56,6 @@ int main(int argc, char **argv) {
     for (int i = 0; i < MAX_COMMANDS_CNT; ++i) {
         commands[i] = calloc(MAX_COMMAND_LEN, sizeof(char));
     }
-    commands_len = malloc(MAX_COMMANDS_CNT * sizeof(int));
     char *filename = malloc(1000);
     filename = argv[1];
 
@@ -72,8 +64,6 @@ int main(int argc, char **argv) {
     size_t len = 0;
     ssize_t read;
 
-    if (commands_list == NULL)
-        exit(EXIT_FAILURE);
 
     int commands_cnt = 0;
     while ((read = getline(&line, &len, commands_list)) != -1) {
@@ -89,7 +79,6 @@ int main(int argc, char **argv) {
                 break;
             commands[commands_cnt][i - start_index] = line[i];
         }
-        commands_len[commands_cnt] = len;
         commands_cnt++;
     }
 
@@ -122,8 +111,9 @@ int main(int argc, char **argv) {
                 sscanf(ptr, "%*[^0123456789]%d", &num);
                 char delim1[] = "|";
                 char *token1;
-                char *ptr1 = strtok_r(commands[num - 1], delim1, &token1);
-
+                char * commands_copy = calloc(MAX_COMMAND_LEN, sizeof (char ));
+                strcpy(commands_copy, commands[num-1]);
+                char *ptr1 = strtok_r(commands_copy, delim1, &token1);
                 while (ptr1 != NULL) {
                     char *token2;
                     char *delim2 = " ";
