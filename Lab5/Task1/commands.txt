@@ -1,0 +1,3 @@
+skladnik1 = /bin/echo "3" | /bin/xargs echo "2" | /bin/xargs echo "1"
+skladnik2 = xargs /bin/echo "6" | /bin/xargs echo "5" | /bin/xargs echo "4"
+skladnik3 = xargs /bin/echo "9" | /bin/xargs echo "8" | /bin/xargs echo "7"

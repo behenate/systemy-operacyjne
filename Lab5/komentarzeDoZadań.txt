@@ -1,0 +1,28 @@
+Zadanie 1
+program należy skompilować za pomocą komendy
+make main
+uruchomi to komendę testową
+
+własne komendy można wpisywać w postaci:
+./task1 składnik1 | składnik2 | ... | składnikn
+
+
+Zadamie 2
+Program należy skompilować komendą
+make main
+
+Zadanie 3
+Program należy skompilowac komendą
+make main
+stworzy to i uruchomi prosty, testowy program main jak i producenta i konsumenta
+
+Producenta i konsumenta można teraz uruchamiać za pomocą
+./producer
+./consumer
+
+Argumenty i ich kolejność są zgodne z treścią zadania
+
+aby uruchomić testy mależy użyć
+make test
+
+Wnioski z testów znajdują się w pliku wnioski.txt

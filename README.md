@@ -14,3 +14,6 @@ https://github.com/behenate/systemy-operacyjne/tree/master/Lab3
 ## Lab 4
 ### Signals, signal handling, communication between processes
 https://github.com/behenate/systemy-operacyjne/tree/master/Lab4
+## Lab 5
+### unnamed and named pipes
+https://github.com/behenate/systemy-operacyjne/tree/master/Lab5

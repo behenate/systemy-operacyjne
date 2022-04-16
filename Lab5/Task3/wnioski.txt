@@ -1,0 +1,14 @@
+wielu producentów, jeden konsument:
+
+przyjęta wartość N to 5
+Transmisja odbyła się poprawnie
+
+
+jeden producenta, wielu konsumentów
+
+Przyjęte N to 30
+Tylko jeden z konsumentów zapisał do pliku (wszyscy konsumenci współdzielili jeden plik)
+
+wielu producentów, wielu konsumentów
+Przyjęte N to 4600
+Wartość N więskza niż Buf size doprowadziło do niepoprawnego działania programu
