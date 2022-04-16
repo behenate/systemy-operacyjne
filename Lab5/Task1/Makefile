@@ -4,6 +4,6 @@ main:
 
 test:
 	make main
-	./task1 commands.txt "skladnik1 | skladnik2"
+	./task1 commands.txt "skladnik1 | skladnik2 | skladnik2"
 clean:
 	rm -f task1

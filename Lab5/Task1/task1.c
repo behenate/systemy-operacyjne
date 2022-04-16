@@ -87,53 +87,49 @@ int main(int argc, char **argv) {
         free(line);
 
 
-    while (1) {
-        char *combination = malloc(10000);
-        if (argc != 3) {
-            printf("Proszę podaj komendę w postaci składnik1 | składnik2 | ... | składnikn \n");
-            scanf("%[^\n]", combination);
-        } else
-            combination = argv[2];
+    char *combination = malloc(10000);
+    if (argc != 3) {
+        printf("Proszę podaj komendę w postaci składnik1 | składnik2 | ... | składnikn \n");
+        scanf("%[^\n]", combination);
+    } else
+        combination = argv[2];
 
-        char delim[] = " ";
-        char *ptr = strtok(combination, delim);
-        int tasks_cnt = 0;
-        char *split_commands[MAX_COMMANDS_CNT][MAX_ARGS_CNT];
-        for (int i = 0; i < MAX_COMMANDS_CNT; ++i) {
-            for (int j = 0; j < MAX_ARGS_CNT; ++j) {
-                split_commands[i][j] = NULL;
-            }
+    char delim[] = " ";
+    char *ptr = strtok(combination, delim);
+    int tasks_cnt = 0;
+    char *split_commands[MAX_COMMANDS_CNT][MAX_ARGS_CNT];
+    for (int i = 0; i < MAX_COMMANDS_CNT; ++i) {
+        for (int j = 0; j < MAX_ARGS_CNT; ++j) {
+            split_commands[i][j] = NULL;
         }
-        int row = 0;
-        while (ptr != NULL) {
-            if (strcmp(ptr, "|") != 0) {
-                int num = 0;
-                sscanf(ptr, "%*[^0123456789]%d", &num);
-                char delim1[] = "|";
-                char *token1;
-                char * commands_copy = calloc(MAX_COMMAND_LEN, sizeof (char ));
-                strcpy(commands_copy, commands[num-1]);
-                char *ptr1 = strtok_r(commands_copy, delim1, &token1);
-                while (ptr1 != NULL) {
-                    char *token2;
-                    char *delim2 = " ";
-                    char *ptr2 = strtok_r(ptr1, delim2, &token2);
-                    int col = 0;
-                    while (ptr2 != NULL) {
-                        split_commands[row][col] = ptr2;
-                        ptr2 = strtok_r(NULL, delim2, &token2);
-                        col++;
-                    }
-                    ptr1 = strtok_r(NULL, delim1, &token1);
-                    row ++;
-                }
-                tasks_cnt++;
-            }
-            ptr = strtok(NULL, delim);
-        }
-        execute_commands(split_commands);
-        break;
     }
-    exit(EXIT_SUCCESS);
-
+    int row = 0;
+    while (ptr != NULL) {
+        if (strcmp(ptr, "|") != 0) {
+            int num = 0;
+            sscanf(ptr, "%*[^0123456789]%d", &num);
+            char delim1[] = "|";
+            char *token1;
+            char * commands_copy = calloc(MAX_COMMAND_LEN, sizeof (char ));
+            strcpy(commands_copy, commands[num-1]);
+            char *ptr1 = strtok_r(commands_copy, delim1, &token1);
+            while (ptr1 != NULL) {
+                char *token2;
+                char *delim2 = " ";
+                char *ptr2 = strtok_r(ptr1, delim2, &token2);
+                int col = 0;
+                while (ptr2 != NULL) {
+                    split_commands[row][col] = ptr2;
+                    ptr2 = strtok_r(NULL, delim2, &token2);
+                    col++;
+                }
+                ptr1 = strtok_r(NULL, delim1, &token1);
+                row ++;
+            }
+            tasks_cnt++;
+        }
+        ptr = strtok(NULL, delim);
+    }
+    execute_commands(split_commands);
+    return 0;
 }

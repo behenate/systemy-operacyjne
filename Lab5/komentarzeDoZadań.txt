@@ -1,11 +1,16 @@
 Zadanie 1
 program należy skompilować za pomocą komendy
 make main
-uruchomi to komendę testową
+
+aby uruchomić test należy użyć komendy
+
+make test
 
 własne komendy można wpisywać w postaci:
-./task1 składnik1 | składnik2 | ... | składnikn
+./task1 commands.txt składnik1 | składnik2 | ... | składnikn
 
+proszę pamiętać, że aby komendy podane w commands.txt działały **należy zacząć od składnik1** a następnie używać składnik 2 lub składnik3
+Nie jest to kwestia programu, a prostego testu, który przygotowałem
 
 Zadamie 2
 Program należy skompilować komendą
