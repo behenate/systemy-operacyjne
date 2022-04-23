@@ -1,3 +1,5 @@
+ZAdania zostały wykonane w całości
+
 Zadanie 1
 program należy skompilować za pomocą komendy
 make main
