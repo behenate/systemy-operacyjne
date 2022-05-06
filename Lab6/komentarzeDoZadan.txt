@@ -1,0 +1,18 @@
+ZADANIE ZOSTAŁO WYKONANE W 100%
+Należy uruchomić kompilację przy użyciu
+
+make main
+
+uruchomienie serwera:
+./server
+klienta:
+
+./client
+
+Komendy:
+2ALL <wiadomość> - wysyła do wszyskich
+2ONE <id> <wiadomość> - wysyła do konkretnego zioma
+LIST - wyświetli wszystkich ziomów
+STOP - derejestruje klienta i wychodzi
+
+Ctrl+c - zamyka serwer

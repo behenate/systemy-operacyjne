@@ -1,0 +1,132 @@
+Message:
+   type:5
+   sender: 0,
+   receiver: 0,
+   time: 2022-05-05 20:16:27,
+   text:/cq_77107
+Message:
+   type:2
+   sender: 0,
+   receiver: 0,
+   time: 2022-05-05 20:16:27,
+   text:
+Message:
+   type:3
+   sender: 0,
+   receiver: -1,
+   time: 2022-05-05 20:16:30,
+   text:hi
+Message:
+   type:5
+   sender: 0,
+   receiver: 0,
+   time: 2022-05-05 20:16:34,
+   text:/cq_77192
+Message:
+   type:2
+   sender: 1,
+   receiver: 0,
+   time: 2022-05-05 20:16:35,
+   text:
+Message:
+   type:3
+   sender: 0,
+   receiver: -1,
+   time: 2022-05-05 20:16:42,
+   text:hi
+Message:
+   type:2
+   sender: 0,
+   receiver: 0,
+   time: 2022-05-05 20:16:44,
+   text:
+Message:
+   type:4
+   sender: 0,
+   receiver: 1,
+   time: 2022-05-05 20:16:52,
+   text:hi
+Message:
+   type:1
+   sender: 0,
+   receiver: -1,
+   time: 2022-05-05 20:18:26,
+   text:Do widzenia
+Message:
+   type:1
+   sender: 0,
+   receiver: -1,
+   time: 2022-05-05 20:19:58,
+   text:Do widzenia
+Message:
+   type:5
+   sender: 0,
+   receiver: 0,
+   time: 2022-05-05 20:20:01,
+   text:/cq_77326
+Message:
+   type:2
+   sender: 0,
+   receiver: 0,
+   time: 2022-05-05 20:20:02,
+   text:
+Message:
+   type:1
+   sender: 0,
+   receiver: -1,
+   time: 2022-05-05 20:20:03,
+   text:Do widzenia
+Message:
+   type:1
+   sender: 0,
+   receiver: -1,
+   time: 2022-05-05 20:20:07,
+   text:Do widzenia
+Message:
+   type:5
+   sender: 0,
+   receiver: 0,
+   time: 2022-05-05 20:20:20,
+   text:/cq_77343
+Message:
+   type:2
+   sender: 0,
+   receiver: 0,
+   time: 2022-05-05 20:20:20,
+   text:
+Message:
+   type:1
+   sender: 0,
+   receiver: -1,
+   time: 2022-05-05 20:20:23,
+   text:Do widzenia
+Message:
+   type:1
+   sender: 0,
+   receiver: -1,
+   time: 2022-05-05 20:20:24,
+   text:Do widzenia
+Message:
+   type:5
+   sender: 0,
+   receiver: 0,
+   time: 2022-05-05 20:21:01,
+   text:/cq_77439
+Message:
+   type:2
+   sender: 0,
+   receiver: 0,
+   time: 2022-05-05 20:21:01,
+   text:
+Message:
+   type:1
+   sender: 0,
+   receiver: -1,
+   time: 2022-05-05 20:21:04,
+   text:Do widzenia
+Message:
+   type:1
+   sender: 0,
+   receiver: -1,
+   time: 2022-05-05 20:21:09,
+   text:Do widzenia
