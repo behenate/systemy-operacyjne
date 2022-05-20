@@ -1,0 +1,358 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------
+N=4 M=4
+------------------------------------------------------------------------------------------------------------------------------------------------------
+45244 21:07:23:674 przygotowuje pizze 6
+45246 21:07:23:674 przygotowuje pizze 4
+45245 21:07:23:674 przygotowuje pizze 4
+45247 21:07:23:674 przygotowuje pizze 8
+45244 21:07:24:674 Dodałem pizzę 6. Liczba pizz w piecu: 1
+45246 21:07:24:674 Dodałem pizzę 4. Liczba pizz w piecu: 2
+45245 21:07:24:674 Dodałem pizzę 4. Liczba pizz w piecu: 3
+45247 21:07:24:674 Dodałem pizzę 8. Liczba pizz w piecu: 4
+45244 21:07:29:674 Wyjmuję pizze: 6. Liczba pizz w piecu: 3. Liczba pizz na stole: 1
+45244 21:07:29:674 przygotowuje pizze 10
+45246 21:07:29:674 Wyjmuję pizze: 4. Liczba pizz w piecu: 2. Liczba pizz na stole: 2
+45246 21:07:29:674 przygotowuje pizze 7
+45248 21:07:29:674 Pobieram pizzę 6 liczba pizz na stole 1.
+45250 21:07:29:674 Pobieram pizzę 4 liczba pizz na stole 0.
+45245 21:07:29:674 Wyjmuję pizze: 4. Liczba pizz w piecu: 0. Liczba pizz na stole: 1
+45245 21:07:29:675 przygotowuje pizze 5
+45247 21:07:29:675 Wyjmuję pizze: 8. Liczba pizz w piecu: 0. Liczba pizz na stole: 2
+45247 21:07:29:675 przygotowuje pizze 8
+45251 21:07:29:675 Pobieram pizzę 4 liczba pizz na stole 1.
+45249 21:07:29:675 Pobieram pizzę 8 liczba pizz na stole 0.
+45244 21:07:30:674 Dodałem pizzę 10. Liczba pizz w piecu: 1
+45246 21:07:30:674 Dodałem pizzę 7. Liczba pizz w piecu: 2
+45245 21:07:30:675 Dodałem pizzę 5. Liczba pizz w piecu: 3
+45247 21:07:30:675 Dodałem pizzę 8. Liczba pizz w piecu: 4
+45248 21:07:34:674 Dostarczam pizzę 6.
+45250 21:07:34:675 Dostarczam pizzę 4.
+45251 21:07:34:675 Dostarczam pizzę 4.
+45249 21:07:34:675 Dostarczam pizzę 8.
+45244 21:07:35:674 Wyjmuję pizze: 10. Liczba pizz w piecu: 2. Liczba pizz na stole: 1
+45244 21:07:35:674 przygotowuje pizze 6
+45246 21:07:35:674 Wyjmuję pizze: 7. Liczba pizz w piecu: 2. Liczba pizz na stole: 2
+45246 21:07:35:674 przygotowuje pizze 4
+45245 21:07:35:675 Wyjmuję pizze: 5. Liczba pizz w piecu: 1. Liczba pizz na stole: 3
+45245 21:07:35:675 przygotowuje pizze 1
+45247 21:07:35:675 Wyjmuję pizze: 8. Liczba pizz w piecu: 0. Liczba pizz na stole: 4
+45247 21:07:35:675 przygotowuje pizze 1
+45244 21:07:36:674 Dodałem pizzę 6. Liczba pizz w piecu: 1
+45246 21:07:36:675 Dodałem pizzę 4. Liczba pizz w piecu: 2
+45245 21:07:36:675 Dodałem pizzę 1. Liczba pizz w piecu: 3
+45247 21:07:36:675 Dodałem pizzę 1. Liczba pizz w piecu: 4
+45248 21:07:38:675 Pobieram pizzę 10 liczba pizz na stole 3.
+45250 21:07:38:675 Pobieram pizzę 7 liczba pizz na stole 2.
+45251 21:07:38:675 Pobieram pizzę 5 liczba pizz na stole 1.
+45249 21:07:38:675 Pobieram pizzę 8 liczba pizz na stole 0.
+45244 21:07:41:675 Wyjmuję pizze: 6. Liczba pizz w piecu: 2. Liczba pizz na stole: 1
+45244 21:07:41:675 przygotowuje pizze 8
+45246 21:07:41:675 Wyjmuję pizze: 4. Liczba pizz w piecu: 2. Liczba pizz na stole: 2
+45246 21:07:41:675 przygotowuje pizze 3
+45245 21:07:41:675 Wyjmuję pizze: 1. Liczba pizz w piecu: 1. Liczba pizz na stole: 3
+45245 21:07:41:675 przygotowuje pizze 1
+45247 21:07:41:675 Wyjmuję pizze: 1. Liczba pizz w piecu: 0. Liczba pizz na stole: 4
+45247 21:07:41:675 przygotowuje pizze 7
+45244 21:07:42:675 Dodałem pizzę 8. Liczba pizz w piecu: 1
+45246 21:07:42:675 Dodałem pizzę 3. Liczba pizz w piecu: 2
+45245 21:07:42:675 Dodałem pizzę 1. Liczba pizz w piecu: 3
+45247 21:07:42:676 Dodałem pizzę 7. Liczba pizz w piecu: 4
+45248 21:07:43:675 Dostarczam pizzę 10.
+45250 21:07:43:675 Dostarczam pizzę 7.
+45251 21:07:43:675 Dostarczam pizzę 5.
+45249 21:07:43:675 Dostarczam pizzę 8.
+45248 21:07:47:675 Pobieram pizzę 6 liczba pizz na stole 3.
+45250 21:07:47:675 Pobieram pizzę 4 liczba pizz na stole 2.
+45244 21:07:47:675 Wyjmuję pizze: 8. Liczba pizz w piecu: 3. Liczba pizz na stole: 3
+45244 21:07:47:675 przygotowuje pizze 2
+45251 21:07:47:675 Pobieram pizzę 8 liczba pizz na stole 2.
+45246 21:07:47:675 Wyjmuję pizze: 3. Liczba pizz w piecu: 1. Liczba pizz na stole: 3
+45246 21:07:47:676 przygotowuje pizze 9
+45245 21:07:47:676 Wyjmuję pizze: 1. Liczba pizz w piecu: 0. Liczba pizz na stole: 4
+45245 21:07:47:676 przygotowuje pizze 8
+45249 21:07:47:676 Pobieram pizzę 3 liczba pizz na stole 3.
+45247 21:07:47:676 Wyjmuję pizze: 7. Liczba pizz w piecu: 0. Liczba pizz na stole: 4
+45247 21:07:47:676 przygotowuje pizze 6
+45244 21:07:48:675 Dodałem pizzę 2. Liczba pizz w piecu: 1
+45246 21:07:48:676 Dodałem pizzę 9. Liczba pizz w piecu: 2
+45245 21:07:48:676 Dodałem pizzę 8. Liczba pizz w piecu: 3
+45247 21:07:48:676 Dodałem pizzę 6. Liczba pizz w piecu: 4
+45248 21:07:52:675 Dostarczam pizzę 6.
+45250 21:07:52:675 Dostarczam pizzę 4.
+45251 21:07:52:676 Dostarczam pizzę 8.
+45249 21:07:52:676 Dostarczam pizzę 3.
+45244 21:07:53:676 Wyjmuję pizze: 2. Liczba pizz w piecu: 3. Liczba pizz na stole: 5
+45244 21:07:53:676 przygotowuje pizze 1
+45244 21:07:54:676 Dodałem pizzę 1. Liczba pizz w piecu: 1
+45248 21:07:56:675 Pobieram pizzę 7 liczba pizz na stole 4.
+45250 21:07:56:675 Pobieram pizzę 1 liczba pizz na stole 3.
+45246 21:07:56:675 Wyjmuję pizze: 9. Liczba pizz w piecu: 1. Liczba pizz na stole: 4
+45246 21:07:56:675 przygotowuje pizze 3
+45245 21:07:56:675 Wyjmuję pizze: 8. Liczba pizz w piecu: 1. Liczba pizz na stole: 5
+45245 21:07:56:675 przygotowuje pizze 8
+45251 21:07:56:676 Pobieram pizzę 9 liczba pizz na stole 4.
+45247 21:07:56:676 Wyjmuję pizze: 6. Liczba pizz w piecu: 1. Liczba pizz na stole: 5
+45247 21:07:56:676 przygotowuje pizze 2
+45249 21:07:56:676 Pobieram pizzę 6 liczba pizz na stole 4.
+45246 21:07:57:676 Dodałem pizzę 3. Liczba pizz w piecu: 2
+45245 21:07:57:676 Dodałem pizzę 8. Liczba pizz w piecu: 3
+45247 21:07:57:676 Dodałem pizzę 2. Liczba pizz w piecu: 4
+45244 21:07:59:676 Wyjmuję pizze: 1. Liczba pizz w piecu: 3. Liczba pizz na stole: 5
+45244 21:07:59:676 przygotowuje pizze 1
+45244 21:08:00:676 Dodałem pizzę 1. Liczba pizz w piecu: 4
+45248 21:08:01:675 Dostarczam pizzę 7.
+45250 21:08:01:675 Dostarczam pizzę 1.
+45251 21:08:01:676 Dostarczam pizzę 9.
+45249 21:08:01:676 Dostarczam pizzę 6.
+45248 21:08:05:675 Pobieram pizzę 1 liczba pizz na stole 4.
+45246 21:08:05:676 Wyjmuję pizze: 3. Liczba pizz w piecu: 1. Liczba pizz na stole: 5
+45246 21:08:05:676 przygotowuje pizze 4
+45250 21:08:05:676 Pobieram pizzę 3 liczba pizz na stole 4.
+45245 21:08:05:676 Wyjmuję pizze: 8. Liczba pizz w piecu: 1. Liczba pizz na stole: 5
+45245 21:08:05:676 przygotowuje pizze 8
+45251 21:08:05:676 Pobieram pizzę 8 liczba pizz na stole 4.
+45247 21:08:05:676 Wyjmuję pizze: 2. Liczba pizz w piecu: 1. Liczba pizz na stole: 5
+45247 21:08:05:676 przygotowuje pizze 7
+45249 21:08:05:676 Pobieram pizzę 2 liczba pizz na stole 4.
+45244 21:08:05:676 Wyjmuję pizze: 1. Liczba pizz w piecu: 0. Liczba pizz na stole: 5
+45244 21:08:05:677 przygotowuje pizze 5
+45246 21:08:06:676 Dodałem pizzę 4. Liczba pizz w piecu: 1
+45245 21:08:06:676 Dodałem pizzę 8. Liczba pizz w piecu: 2
+45247 21:08:06:676 Dodałem pizzę 7. Liczba pizz w piecu: 3
+45244 21:08:06:677 Dodałem pizzę 5. Liczba pizz w piecu: 4
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+N=9 M=9
+------------------------------------------------------------------------------------------------------------------------------------------------------
+45483 21:08:25:530 przygotowuje pizze 9
+45485 21:08:25:530 przygotowuje pizze 4
+45486 21:08:25:530 przygotowuje pizze 4
+45484 21:08:25:530 przygotowuje pizze 10
+45491 21:08:25:531 przygotowuje pizze 5
+45488 21:08:25:531 przygotowuje pizze 6
+45487 21:08:25:531 przygotowuje pizze 7
+45490 21:08:25:531 przygotowuje pizze 3
+45489 21:08:25:531 przygotowuje pizze 6
+45485 21:08:26:530 Dodałem pizzę 4. Liczba pizz w piecu: 1
+45483 21:08:26:530 Dodałem pizzę 9. Liczba pizz w piecu: 2
+45486 21:08:26:531 Dodałem pizzę 4. Liczba pizz w piecu: 3
+45484 21:08:26:531 Dodałem pizzę 10. Liczba pizz w piecu: 4
+45491 21:08:26:531 Dodałem pizzę 5. Liczba pizz w piecu: 5
+45485 21:08:31:530 Wyjmuję pizze: 4. Liczba pizz w piecu: 5. Liczba pizz na stole: 1
+45485 21:08:31:530 przygotowuje pizze 5
+45488 21:08:31:530 Dodałem pizzę 6. Liczba pizz w piecu: 5
+45483 21:08:31:530 Wyjmuję pizze: 9. Liczba pizz w piecu: 5. Liczba pizz na stole: 2
+45487 21:08:31:530 Dodałem pizzę 7. Liczba pizz w piecu: 5
+45483 21:08:31:530 przygotowuje pizze 1
+45492 21:08:31:531 Pobieram pizzę 4 liczba pizz na stole 1.
+45494 21:08:31:531 Pobieram pizzę 9 liczba pizz na stole 0.
+45486 21:08:31:531 Wyjmuję pizze: 4. Liczba pizz w piecu: 4. Liczba pizz na stole: 1
+45486 21:08:31:531 przygotowuje pizze 10
+45489 21:08:31:531 Dodałem pizzę 6. Liczba pizz w piecu: 5
+45490 21:08:31:531 Dodałem pizzę 3. Liczba pizz w piecu: 5
+45493 21:08:31:531 Pobieram pizzę 4 liczba pizz na stole 0.
+45484 21:08:31:531 Wyjmuję pizze: 10. Liczba pizz w piecu: 4. Liczba pizz na stole: 1
+45484 21:08:31:531 przygotowuje pizze 9
+45491 21:08:31:531 Wyjmuję pizze: 5. Liczba pizz w piecu: 4. Liczba pizz na stole: 2
+45491 21:08:31:531 przygotowuje pizze 4
+45497 21:08:31:531 Pobieram pizzę 10 liczba pizz na stole 1.
+45495 21:08:31:531 Pobieram pizzę 5 liczba pizz na stole 0.
+45485 21:08:32:530 Dodałem pizzę 5. Liczba pizz w piecu: 5
+45483 21:08:36:530 Dodałem pizzę 1. Liczba pizz w piecu: 5
+45488 21:08:36:530 Wyjmuję pizze: 6. Liczba pizz w piecu: 5. Liczba pizz na stole: 1
+45488 21:08:36:531 przygotowuje pizze 5
+45487 21:08:36:531 Wyjmuję pizze: 7. Liczba pizz w piecu: 4. Liczba pizz na stole: 2
+45487 21:08:36:531 przygotowuje pizze 1
+45486 21:08:36:531 Dodałem pizzę 10. Liczba pizz w piecu: 5
+45492 21:08:36:531 Dostarczam pizzę 4.
+45499 21:08:36:531 Pobieram pizzę 6 liczba pizz na stole 1.
+45494 21:08:36:531 Dostarczam pizzę 9.
+45496 21:08:36:531 Pobieram pizzę 7 liczba pizz na stole 0.
+45489 21:08:36:531 Wyjmuję pizze: 6. Liczba pizz w piecu: 4. Liczba pizz na stole: 1
+45489 21:08:36:531 przygotowuje pizze 8
+45484 21:08:36:531 Dodałem pizzę 9. Liczba pizz w piecu: 5
+45498 21:08:36:531 Pobieram pizzę 6 liczba pizz na stole 0.
+45491 21:08:36:531 Dodałem pizzę 4. Liczba pizz w piecu: 5
+45490 21:08:36:531 Wyjmuję pizze: 3. Liczba pizz w piecu: 5. Liczba pizz na stole: 1
+45490 21:08:36:531 przygotowuje pizze 7
+45493 21:08:36:531 Dostarczam pizzę 4.
+45497 21:08:36:531 Dostarczam pizzę 10.
+45500 21:08:36:531 Pobieram pizzę 3 liczba pizz na stole 0.
+45495 21:08:36:532 Dostarczam pizzę 5.
+45485 21:08:37:531 Wyjmuję pizze: 5. Liczba pizz w piecu: 4. Liczba pizz na stole: 1
+45485 21:08:37:531 przygotowuje pizze 3
+45488 21:08:37:531 Dodałem pizzę 5. Liczba pizz w piecu: 5
+45492 21:08:40:531 Pobieram pizzę 5 liczba pizz na stole 0.
+45483 21:08:41:531 Wyjmuję pizze: 1. Liczba pizz w piecu: 4. Liczba pizz na stole: 1
+45483 21:08:41:531 przygotowuje pizze 4
+45487 21:08:41:531 Dodałem pizzę 1. Liczba pizz w piecu: 5
+45494 21:08:41:531 Pobieram pizzę 1 liczba pizz na stole 0.
+45489 21:08:41:531 Dodałem pizzę 8. Liczba pizz w piecu: 5
+45486 21:08:41:531 Wyjmuję pizze: 10. Liczba pizz w piecu: 5. Liczba pizz na stole: 1
+45499 21:08:41:531 Dostarczam pizzę 6.
+45486 21:08:41:531 przygotowuje pizze 2
+45493 21:08:41:531 Pobieram pizzę 10 liczba pizz na stole 0.
+45496 21:08:41:531 Dostarczam pizzę 7.
+45498 21:08:41:531 Dostarczam pizzę 6.
+45484 21:08:41:531 Wyjmuję pizze: 9. Liczba pizz w piecu: 4. Liczba pizz na stole: 1
+45490 21:08:41:531 Dodałem pizzę 7. Liczba pizz w piecu: 4
+45484 21:08:41:531 przygotowuje pizze 9
+45491 21:08:41:531 Wyjmuję pizze: 4. Liczba pizz w piecu: 5. Liczba pizz na stole: 2
+45485 21:08:41:531 Dodałem pizzę 3. Liczba pizz w piecu: 5
+45491 21:08:41:531 przygotowuje pizze 10
+45497 21:08:41:531 Pobieram pizzę 9 liczba pizz na stole 1.
+45495 21:08:41:531 Pobieram pizzę 4 liczba pizz na stole 0.
+45500 21:08:41:532 Dostarczam pizzę 3.
+45488 21:08:42:531 Wyjmuję pizze: 5. Liczba pizz w piecu: 4. Liczba pizz na stole: 1
+45488 21:08:42:531 przygotowuje pizze 5
+45483 21:08:42:531 Dodałem pizzę 4. Liczba pizz w piecu: 5
+45492 21:08:45:531 Dostarczam pizzę 5.
+45499 21:08:45:531 Pobieram pizzę 5 liczba pizz na stole 0.
+45487 21:08:46:531 Wyjmuję pizze: 1. Liczba pizz w piecu: 5. Liczba pizz na stole: 1
+45486 21:08:46:531 Dodałem pizzę 2. Liczba pizz w piecu: 5
+45487 21:08:46:531 przygotowuje pizze 1
+45494 21:08:46:531 Dostarczam pizzę 1.
+45489 21:08:46:531 Wyjmuję pizze: 8. Liczba pizz w piecu: 4. Liczba pizz na stole: 2
+45489 21:08:46:531 przygotowuje pizze 5
+45484 21:08:46:531 Dodałem pizzę 9. Liczba pizz w piecu: 5
+45496 21:08:46:531 Pobieram pizzę 1 liczba pizz na stole 1.
+45498 21:08:46:531 Pobieram pizzę 8 liczba pizz na stole 0.
+45493 21:08:46:531 Dostarczam pizzę 10.
+45497 21:08:46:532 Dostarczam pizzę 9.
+45491 21:08:46:531 Dodałem pizzę 10. Liczba pizz w piecu: 5
+45490 21:08:46:531 Wyjmuję pizze: 7. Liczba pizz w piecu: 5. Liczba pizz na stole: 1
+45490 21:08:46:532 przygotowuje pizze 1
+45485 21:08:46:532 Wyjmuję pizze: 3. Liczba pizz w piecu: 5. Liczba pizz na stole: 2
+45488 21:08:46:532 Dodałem pizzę 5. Liczba pizz w piecu: 5
+45495 21:08:46:532 Dostarczam pizzę 4.
+45485 21:08:46:532 przygotowuje pizze 4
+45500 21:08:46:532 Pobieram pizzę 7 liczba pizz na stole 1.
+45483 21:08:47:531 Wyjmuję pizze: 4. Liczba pizz w piecu: 4. Liczba pizz na stole: 2
+45483 21:08:47:531 przygotowuje pizze 9
+45489 21:08:47:531 Dodałem pizzę 5. Liczba pizz w piecu: 5
+45492 21:08:49:531 Pobieram pizzę 4 liczba pizz na stole 1.
+45494 21:08:50:531 Pobieram pizzę 3 liczba pizz na stole 0.
+45499 21:08:50:531 Dostarczam pizzę 5.
+45486 21:08:51:531 Wyjmuję pizze: 2. Liczba pizz w piecu: 5. Liczba pizz na stole: 1
+45486 21:08:51:531 przygotowuje pizze 2
+45487 21:08:51:531 Dodałem pizzę 1. Liczba pizz w piecu: 5
+45493 21:08:51:531 Pobieram pizzę 2 liczba pizz na stole 0.
+45484 21:08:51:531 Wyjmuję pizze: 9. Liczba pizz w piecu: 4. Liczba pizz na stole: 1
+45484 21:08:51:531 przygotowuje pizze 2
+45496 21:08:51:531 Dostarczam pizzę 1.
+45490 21:08:51:531 Dodałem pizzę 1. Liczba pizz w piecu: 5
+45497 21:08:51:531 Pobieram pizzę 9 liczba pizz na stole 0.
+45498 21:08:51:531 Dostarczam pizzę 8.
+45491 21:08:51:532 Wyjmuję pizze: 10. Liczba pizz w piecu: 4. Liczba pizz na stole: 1
+45491 21:08:51:532 przygotowuje pizze 4
+45485 21:08:51:532 Dodałem pizzę 4. Liczba pizz w piecu: 5
+45495 21:08:51:532 Pobieram pizzę 10 liczba pizz na stole 0.
+45488 21:08:51:532 Wyjmuję pizze: 5. Liczba pizz w piecu: 5. Liczba pizz na stole: 1
+45500 21:08:51:532 Dostarczam pizzę 7.
+45483 21:08:51:532 Dodałem pizzę 9. Liczba pizz w piecu: 5
+45488 21:08:51:532 przygotowuje pizze 8
+45489 21:08:52:532 Wyjmuję pizze: 5. Liczba pizz w piecu: 5. Liczba pizz na stole: 2
+45486 21:08:52:532 Dodałem pizzę 2. Liczba pizz w piecu: 5
+45489 21:08:52:532 przygotowuje pizze 6
+45492 21:08:54:532 Dostarczam pizzę 4.
+45499 21:08:54:532 Pobieram pizzę 5 liczba pizz na stole 1.
+45494 21:08:55:531 Dostarczam pizzę 3.
+45496 21:08:55:531 Pobieram pizzę 5 liczba pizz na stole 0.
+45487 21:08:56:531 Wyjmuję pizze: 1. Liczba pizz w piecu: 4. Liczba pizz na stole: 1
+45493 21:08:56:531 Dostarczam pizzę 2.
+45487 21:08:56:531 przygotowuje pizze 8
+45484 21:08:56:531 Dodałem pizzę 2. Liczba pizz w piecu: 5
+45498 21:08:56:531 Pobieram pizzę 1 liczba pizz na stole 0.
+45490 21:08:56:531 Wyjmuję pizze: 1. Liczba pizz w piecu: 5. Liczba pizz na stole: 1
+45491 21:08:56:531 Dodałem pizzę 4. Liczba pizz w piecu: 5
+45490 21:08:56:531 przygotowuje pizze 5
+45500 21:08:56:531 Pobieram pizzę 1 liczba pizz na stole 0.
+45497 21:08:56:531 Dostarczam pizzę 9.
+45485 21:08:56:532 Wyjmuję pizze: 4. Liczba pizz w piecu: 5. Liczba pizz na stole: 1
+45488 21:08:56:532 Dodałem pizzę 8. Liczba pizz w piecu: 5
+45495 21:08:56:532 Dostarczam pizzę 10.
+45485 21:08:56:532 przygotowuje pizze 4
+45483 21:08:56:532 Wyjmuję pizze: 9. Liczba pizz w piecu: 4. Liczba pizz na stole: 2
+45483 21:08:56:532 przygotowuje pizze 5
+45489 21:08:56:532 Dodałem pizzę 6. Liczba pizz w piecu: 5
+45486 21:08:57:532 Wyjmuję pizze: 2. Liczba pizz w piecu: 4. Liczba pizz na stole: 3
+45486 21:08:57:532 przygotowuje pizze 2
+45487 21:08:57:532 Dodałem pizzę 8. Liczba pizz w piecu: 5
+45492 21:08:58:532 Pobieram pizzę 4 liczba pizz na stole 2.
+45494 21:08:59:531 Pobieram pizzę 9 liczba pizz na stole 1.
+45499 21:08:59:532 Dostarczam pizzę 5.
+45493 21:09:00:531 Pobieram pizzę 2 liczba pizz na stole 0.
+45496 21:09:00:531 Dostarczam pizzę 5.
+45484 21:09:01:531 Wyjmuję pizze: 2. Liczba pizz w piecu: 4. Liczba pizz na stole: 1
+45484 21:09:01:531 przygotowuje pizze 9
+45498 21:09:01:531 Dostarczam pizzę 1.
+45490 21:09:01:531 Dodałem pizzę 5. Liczba pizz w piecu: 5
+45497 21:09:01:531 Pobieram pizzę 2 liczba pizz na stole 0.
+45500 21:09:01:532 Dostarczam pizzę 1.
+45485 21:09:01:532 Dodałem pizzę 4. Liczba pizz w piecu: 5
+45491 21:09:01:532 Wyjmuję pizze: 4. Liczba pizz w piecu: 5. Liczba pizz na stole: 1
+45491 21:09:01:532 przygotowuje pizze 6
+45495 21:09:01:532 Pobieram pizzę 4 liczba pizz na stole 0.
+45488 21:09:01:532 Wyjmuję pizze: 8. Liczba pizz w piecu: 4. Liczba pizz na stole: 1
+45488 21:09:01:532 przygotowuje pizze 8
+45483 21:09:01:532 Dodałem pizzę 5. Liczba pizz w piecu: 5
+45489 21:09:01:532 Wyjmuję pizze: 6. Liczba pizz w piecu: 4. Liczba pizz na stole: 2
+45489 21:09:01:532 przygotowuje pizze 4
+45486 21:09:01:532 Dodałem pizzę 2. Liczba pizz w piecu: 5
+45487 21:09:02:532 Wyjmuję pizze: 8. Liczba pizz w piecu: 5. Liczba pizz na stole: 3
+45484 21:09:02:532 Dodałem pizzę 9. Liczba pizz w piecu: 5
+45487 21:09:02:532 przygotowuje pizze 4
+45492 21:09:03:532 Dostarczam pizzę 4.
+45499 21:09:03:532 Pobieram pizzę 8 liczba pizz na stole 2.
+45494 21:09:04:532 Dostarczam pizzę 9.
+45496 21:09:04:532 Pobieram pizzę 6 liczba pizz na stole 1.
+45493 21:09:05:531 Dostarczam pizzę 2.
+45498 21:09:05:532 Pobieram pizzę 8 liczba pizz na stole 0.
+45491 21:09:06:532 Dodałem pizzę 6. Liczba pizz w piecu: 5
+45490 21:09:06:532 Wyjmuję pizze: 5. Liczba pizz w piecu: 5. Liczba pizz na stole: 1
+45490 21:09:06:532 przygotowuje pizze 7
+45497 21:09:06:532 Dostarczam pizzę 2.
+45500 21:09:06:532 Pobieram pizzę 5 liczba pizz na stole 0.
+45488 21:09:06:532 Dodałem pizzę 8. Liczba pizz w piecu: 5
+45485 21:09:06:532 Wyjmuję pizze: 4. Liczba pizz w piecu: 5. Liczba pizz na stole: 1
+45485 21:09:06:532 przygotowuje pizze 5
+45495 21:09:06:532 Dostarczam pizzę 4.
+45483 21:09:06:532 Wyjmuję pizze: 5. Liczba pizz w piecu: 4. Liczba pizz na stole: 2
+45483 21:09:06:532 przygotowuje pizze 3
+45489 21:09:06:532 Dodałem pizzę 4. Liczba pizz w piecu: 5
+45486 21:09:06:532 Wyjmuję pizze: 2. Liczba pizz w piecu: 4. Liczba pizz na stole: 3
+45486 21:09:06:532 przygotowuje pizze 4
+45487 21:09:06:532 Dodałem pizzę 4. Liczba pizz w piecu: 5
+45484 21:09:07:532 Wyjmuję pizze: 9. Liczba pizz w piecu: 4. Liczba pizz na stole: 4
+45484 21:09:07:532 przygotowuje pizze 1
+45490 21:09:07:532 Dodałem pizzę 7. Liczba pizz w piecu: 5
+45492 21:09:07:532 Pobieram pizzę 4 liczba pizz na stole 3.
+45494 21:09:08:532 Pobieram pizzę 5 liczba pizz na stole 2.
+45499 21:09:08:532 Dostarczam pizzę 8.
+45493 21:09:09:532 Pobieram pizzę 2 liczba pizz na stole 1.
+45496 21:09:09:532 Dostarczam pizzę 6.
+45498 21:09:10:532 Dostarczam pizzę 8.
+45497 21:09:10:532 Pobieram pizzę 9 liczba pizz na stole 0.
+45491 21:09:11:532 Wyjmuję pizze: 6. Liczba pizz w piecu: 3. Liczba pizz na stole: 1
+45500 21:09:11:532 Dostarczam pizzę 5.
+45485 21:09:11:532 Dodałem pizzę 5. Liczba pizz w piecu: 4
+45483 21:09:11:532 Dodałem pizzę 3. Liczba pizz w piecu: 5
+45491 21:09:11:532 przygotowuje pizze 8
+45488 21:09:11:532 Wyjmuję pizze: 8. Liczba pizz w piecu: 5. Liczba pizz na stole: 2
+45488 21:09:11:532 przygotowuje pizze 4
+45495 21:09:11:532 Pobieram pizzę 6 liczba pizz na stole 1.
+45489 21:09:11:532 Wyjmuję pizze: 4. Liczba pizz w piecu: 5. Liczba pizz na stole: 2
+45489 21:09:11:532 przygotowuje pizze 7
+45486 21:09:11:532 Dodałem pizzę 4. Liczba pizz w piecu: 5
+45487 21:09:11:532 Wyjmuję pizze: 4. Liczba pizz w piecu: 5. Liczba pizz na stole: 3
+45484 21:09:11:533 Dodałem pizzę 1. Liczba pizz w piecu: 5
+45487 21:09:11:533 przygotowuje pizze 1
+45490 21:09:12:532 Wyjmuję pizze: 7. Liczba pizz w piecu: 5. Liczba pizz na stole: 4
+45492 21:09:12:532 Dostarczam pizzę 4.
+45490 21:09:12:533 przygotowuje pizze 9
+45488 21:09:12:532 Dodałem pizzę 4. Liczba pizz w piecu: 5
+45499 21:09:12:533 Pobieram pizzę 4 liczba pizz na stole 3.
+45494 21:09:13:532 Dostarczam pizzę 5.
+45496 21:09:13:532 Pobieram pizzę 8 liczba pizz na stole 2.
+45493 21:09:14:532 Dostarczam pizzę 2.
+45498 21:09:14:532 Pobieram pizzę 4 liczba pizz na stole 1.

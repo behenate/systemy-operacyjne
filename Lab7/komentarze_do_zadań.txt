@@ -1,0 +1,12 @@
+
+------------------------------------------------------------------------
+ZADANIE WYKONANE W 100%
+------------------------------------------------------------------------
+
+Aby skompilować program, należy wykonać polecenie:
+make main
+
+Skompiluje to program
+Aby uruchomić program należy wpisać polecenie:
+
+./main <liczba kucharzy> <liczba dostawców>

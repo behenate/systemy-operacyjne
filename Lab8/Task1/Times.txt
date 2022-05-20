@@ -1,0 +1,104 @@
+---------------------------------------------------------------------------------------------------------
+POMIARY
+---------------------------------------------------------------------------------------------------------
+Wnioski z poniższych wyników:
+zwiększanie liczby wątków dla metody numbers niewiele daje. Jest to spowodowane tym, żę każdy wątek i tak musi przejść
+po całej tablicy.
+
+Dla metody block każdy wątek ma do analizy tylko część obrazu, dlatego zwiększanie liczby wątków prowadzi do lepszego działania.
+Na moim komputerze zwiększanie liczby wątków aż do 8 dawało duże zyski (mam 8 rdzeniowy procesor).
+
+-----------------------------------
+Metoda numbers:
+-----------------------------------
+Dla 1 wątku:
+    Processing time, thread 0 : 60893 micro seconds
+    Processing time, numbers mode: 61192 micro seconds
+
+Dla 2 wątków:
+    Processing time, thread 0 : 22218 micro seconds
+    Processing time, thread 1 : 52698 micro seconds
+    Processing time, numbers mode: 52953 micro seconds
+
+Dla 4 wątków:
+    Processing time, thread 3 : 20883 micro seconds
+    Processing time, thread 2 : 23444 micro seconds
+    Processing time, thread 0 : 36326 micro seconds
+    Processing time, thread 1 : 43986 micro seconds
+    Processing time, numbers mode: 44244 micro seconds
+Dla 8 wątków:
+    Processing time, thread 0 : 26252 micro seconds
+    Processing time, thread 7 : 36846 micro seconds
+    Processing time, thread 3 : 37895 micro seconds
+    Processing time, thread 6 : 41266 micro seconds
+    Processing time, thread 2 : 42035 micro seconds
+    Processing time, thread 4 : 42381 micro seconds
+    Processing time, thread 1 : 43746 micro seconds
+    Processing time, thread 5 : 44439 micro seconds
+    Processing time, numbers mode: 44740 micro seconds
+
+Dla 16 wątków:
+    Processing time, thread 15 : 22091 micro seconds
+    Processing time, thread 13 : 29965 micro seconds
+    Processing time, thread 7 : 35015 micro seconds
+    Processing time, thread 5 : 36771 micro seconds
+    Processing time, thread 11 : 39400 micro seconds
+    Processing time, thread 3 : 44601 micro seconds
+    Processing time, thread 14 : 47860 micro seconds
+    Processing time, thread 1 : 55802 micro seconds
+    Processing time, thread 12 : 55962 micro seconds
+    Processing time, thread 10 : 57823 micro seconds
+    Processing time, thread 4 : 59569 micro seconds
+    Processing time, thread 2 : 59637 micro seconds
+    Processing time, thread 0 : 60806 micro seconds
+    Processing time, thread 6 : 60622 micro seconds
+    Processing time, thread 9 : 60948 micro seconds
+    Processing time, thread 8 : 61930 micro seconds
+    Processing time, numbers mode: 62378 micro seconds
+
+
+-----------------------------------
+Metoda block:
+-----------------------------------
+Dla 1 wątku:
+    Processing time, thread 0 : 36941 micro seconds
+    Processing time, blocks mode: 37715 micro seconds
+Dla 2 wątków:
+    Processing time, thread 0 : 20807 micro seconds
+    Processing time, thread 1 : 20742 micro seconds
+    Processing time, blocks mode: 21271 micro seconds
+Dla 4 wątków:
+    Processing time, thread 3 : 7040 micro seconds
+    Processing time, thread 0 : 7797 micro seconds
+    Processing time, thread 1 : 9677 micro seconds
+    Processing time, thread 2 : 9641 micro seconds
+    Processing time, blocks mode: 9878 micro seconds
+Dla 8 wątków:
+    Processing time, thread 7 : 4319 micro seconds
+    Processing time, thread 6 : 6643 micro seconds
+    Processing time, thread 0 : 7512 micro seconds
+    Processing time, thread 1 : 7496 micro seconds
+    Processing time, thread 3 : 7522 micro seconds
+    Processing time, thread 5 : 7498 micro seconds
+    Processing time, thread 4 : 7671 micro seconds
+    Processing time, thread 2 : 7804 micro seconds
+    Processing time, blocks mode: 8040 micro seconds
+Dla 16 wątków:
+    Processing time, thread 0 : 5758 micro seconds
+    Processing time, thread 1 : 8042 micro seconds
+    Processing time, thread 4 : 8100 micro seconds
+    Processing time, thread 8 : 7955 micro seconds
+    Processing time, thread 5 : 8045 micro seconds
+    Processing time, thread 3 : 8120 micro seconds
+    Processing time, thread 7 : 8003 micro seconds
+    Processing time, thread 13 : 7329 micro seconds
+    Processing time, thread 6 : 8056 micro seconds
+    Processing time, thread 2 : 8126 micro seconds
+    Processing time, thread 9 : 8081 micro seconds
+    Processing time, thread 15 : 5853 micro seconds
+    Processing time, thread 12 : 7567 micro seconds
+    Processing time, thread 10 : 8004 micro seconds
+    Processing time, thread 14 : 7079 micro seconds
+    Processing time, thread 11 : 8030 micro seconds
+    Processing time, blocks mode: 8778 micro seconds
+    Process finished with exit code 0

@@ -1,0 +1,16 @@
+
+------------------------------------------------------------------------
+ZADANIE WYKONANE W 100%
+------------------------------------------------------------------------
+
+Aby skompilować program, należy wykonać polecenie:
+make main
+
+Skompiluje to program
+Aby uruchomić program należy wpisać polecenie:
+
+./main <liczba wątków> <metoda: block/numbers> <plik_wejściowy> <plik_wyjściowy>
+
+aby uruchomić program z przykładowym plikiem należy użyć
+
+make run
