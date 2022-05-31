@@ -8,17 +8,19 @@ int reindeer_waiting = 0;
 int elves_queue[10];
 int presents= 0;
 
-
+pthread_mutex_t santa_m = PTHREAD_MUTEX_INITIALIZER;
 pthread_mutex_t elves_m = PTHREAD_MUTEX_INITIALIZER;
-pthread_cond_t elves_cond = PTHREAD_COND_INITIALIZER;
-pthread_mutex_t elves_waiting_m = PTHREAD_MUTEX_INITIALIZER;
-
 pthread_mutex_t reindeer_m = PTHREAD_MUTEX_INITIALIZER;
-pthread_cond_t reindeer_c = PTHREAD_COND_INITIALIZER;
+
+pthread_mutex_t elves_waiting_m = PTHREAD_MUTEX_INITIALIZER;
 pthread_mutex_t reindeer_waiting_m = PTHREAD_MUTEX_INITIALIZER;
 
-pthread_mutex_t santa_m = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t santa_c = PTHREAD_COND_INITIALIZER;
+pthread_cond_t elves_c = PTHREAD_COND_INITIALIZER;
+pthread_cond_t reindeer_c = PTHREAD_COND_INITIALIZER;
+
+
+
 
 void wake_up_santa(){
     pthread_mutex_lock(&santa_m);
@@ -45,7 +47,7 @@ void* elves_work(void* arg){
         sleep(rand() % 4 + 2);
         pthread_mutex_lock(&elves_waiting_m);
         while (elves_waiting == 3)
-            pthread_cond_wait(&elves_cond, &elves_waiting_m);
+            pthread_cond_wait(&elves_c, &elves_waiting_m);
 
         pthread_mutex_unlock(&elves_waiting_m);
 
@@ -122,7 +124,7 @@ void* santa_work(){
                 elves_queue[i] = -1;
             }
             elves_waiting -= 3;
-            pthread_cond_broadcast(&elves_cond);
+            pthread_cond_broadcast(&elves_c);
             pthread_mutex_unlock(&elves_waiting_m);
         }
 
