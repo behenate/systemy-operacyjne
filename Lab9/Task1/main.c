@@ -31,8 +31,9 @@ void wake_up_santa(){
 void elf_waiting_routine(int elf_no){
     if(elves_waiting < 3){
         elves_queue[elves_waiting] = elf_no;
-        printf("Elf: czeka %d elfoów na mikołaja %d \n", elves_waiting, elf_no);
         elves_waiting++;
+        printf("Elf: czeka %d elfoów na mikołaja %d \n", elves_waiting, elf_no);
+
     }else if(elves_waiting == 3){
         printf("Elf: wybudzam Mikołaja, ID: %d \n", elf_no);
         wake_up_santa();
