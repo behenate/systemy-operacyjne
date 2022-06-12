@@ -1,7 +1,3 @@
-//
-// Created by sylwia on 5/26/21.
-//
-
 #ifndef LAB10_COMMON_H
 #define LAB10_COMMON_H
 
@@ -18,22 +14,14 @@
 #include <unistd.h>
 #include <errno.h>
 #include <signal.h>
-#include <stdbool.h>
 #include <arpa/inet.h>
 
-
-
-
 typedef struct{
-    char* name;
-    int fd;
-    bool available;
-    int opponent_idx;
+    char* nickname;
+    int id;
+    int connected;
+    int enemy_id;
 } client;
 
 
-
-
-
-
-#endif //LAB10_COMMON_H
+#endif

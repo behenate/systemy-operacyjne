@@ -1,4 +1,4 @@
-#include "common.h"
+#include "client.h"
 #define MESSAGE_LENGTH 256
 
 int playing_as_O;
@@ -7,7 +7,7 @@ char *cmd;
 char *argument;
 char cross_board[9];
 char current_move = 'O';
-pthread_mutex_t game_mutex = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t server_side_mutex = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t game_cond = PTHREAD_COND_INITIALIZER;
 char buffer[MESSAGE_LENGTH + 1];
 int server_socket;
@@ -18,7 +18,6 @@ int server_socket;
 // 4 - callback after enemy move
 // 5 - my move
 // 6 - exiting
-
 int game_state = 1;
 
 
@@ -94,20 +93,24 @@ void has_game_ended() {
 
 
 
-
+void clear_cross_board() {
+    for (int i = 0; i < 9; ++i) {
+        cross_board[i] = ' ';
+    }
+}
 void draw_the_board() {
     for (int y = 0; y < 3; y++) {
         for (int x = 0; x < 3; x++) {
             if (!is_filled(cross_board[y * 3 + x])) {
-                printf("  %d  ", y * 3 + x + 1);
+                printf(" %d ", y * 3 + x + 1);
             } else if (cross_board[y * 3 + x] == 'O') {
-                printf("  0  ");
+                printf(" 0 ");
             } else {
-                printf("  X  ");
+                printf(" X ");
             }
 
         }
-        printf("\n\n");
+        printf("\n");
     }
 }
 void parse_command(char *msg) {
@@ -115,11 +118,7 @@ void parse_command(char *msg) {
     argument = strtok(NULL, ":");
 }
 
-void clear_cross_board() {
-    for (int i = 0; i < 9; ++i) {
-        cross_board[i] = ' ';
-    }
-}
+
 
 void game_thread_on_beginning(){
     printf("Starting! \n");
@@ -141,12 +140,12 @@ void game_thread_on_beginning(){
 }
 void waiting_for_enemy_to_join(){
     printf("Waiting for enemy to join! \n");
-    pthread_mutex_lock(&game_mutex);
+    pthread_mutex_lock(&server_side_mutex);
     while (game_state != 1 && game_state != 6) {
-        pthread_cond_wait(&game_cond, &game_mutex);
+        pthread_cond_wait(&game_cond, &server_side_mutex);
     }
 
-    pthread_mutex_unlock(&game_mutex);
+    pthread_mutex_unlock(&server_side_mutex);
     clear_cross_board();
     playing_as_O = 0;
     if (argument[0] == 'O'){
@@ -164,11 +163,11 @@ void waiting_for_enemy_to_join(){
 void wait_for_enemy_move(){
     printf("Enemy is making their move\n");
 
-    pthread_mutex_lock(&game_mutex);
+    pthread_mutex_lock(&server_side_mutex);
     while (game_state != 4 && game_state != 6) {
-        pthread_cond_wait(&game_cond, &game_mutex);
+        pthread_cond_wait(&game_cond, &server_side_mutex);
     }
-    pthread_mutex_unlock(&game_mutex);
+    pthread_mutex_unlock(&server_side_mutex);
     printf("Enemy has made their move! \n");
 }
 
@@ -210,7 +209,7 @@ void my_move(){
     }
 }
 void game_thread() {
-    while (true) {
+    while (1) {
         if (game_state == 1) {
             game_thread_on_beginning();
         } else if (game_state == 2) {
@@ -291,7 +290,6 @@ int main(int argc, char *argv[]) {
         char *port = argv[3];
         internet_connection(port);
     } else {
-        printf("Incorrect connection type!\n");
         exit(1);
     }
 
@@ -305,7 +303,7 @@ int main(int argc, char *argv[]) {
         parse_command(buffer);
 
 
-        pthread_mutex_lock(&game_mutex);
+        pthread_mutex_lock(&server_side_mutex);
         if (strcmp(cmd, "add") == 0) {
             is_player_created = on_add_command(is_player_created);
         } else if (strcmp(cmd, "move") == 0)
@@ -315,6 +313,6 @@ int main(int argc, char *argv[]) {
         else if (strcmp(cmd, "ping") == 0)
             on_ping_command();
         pthread_cond_signal(&game_cond);
-        pthread_mutex_unlock(&game_mutex);
+        pthread_mutex_unlock(&server_side_mutex);
     }
 }
